@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>شرکت املاک رولکس ملایر</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--bg2:#08100c;--card:#0c1511;--ink:#f3efe3;--mut:#9aa89f;--g:#12b76a;--g2:#0b7a47;--au:#d9b25c;--au2:#f6e3a1;--line:rgba(217,178,92,.25);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px;overflow-x:clip;max-width:100%}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8;overflow-x:clip;max-width:100%}
+.gold{background:linear-gradient(100deg,var(--au) 20%,var(--au2) 45%,var(--au) 70%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 5s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:10px 5vw;background:rgba(0,0,0,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav b{font-weight:900;font-size:1.1rem}nav div{display:flex;gap:18px;font-size:.9rem}
+nav a{color:var(--ink);text-decoration:none;opacity:.8}nav a:hover{color:var(--au);opacity:1}
+.hero{min-height:92vh;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:20px;padding:40px 5vw;position:relative;background:radial-gradient(ellipse at 75% 45%,rgba(18,183,106,.18),transparent 60%)}
+.hero h1{font-size:clamp(2.3rem,6vw,4.6rem);font-weight:900;line-height:1.25;animation:up 1s .1s both}
+.hero p{color:var(--mut);max-width:34em;margin:16px 0 26px;animation:up 1s .35s both}
+@keyframes up{from{opacity:0;transform:translateY(30px)}}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:800;padding:12px 26px;border-radius:50px;text-decoration:none;transition:.3s}
+.b1{background:linear-gradient(135deg,var(--au),#b88a2e);color:#000}.b1:hover{box-shadow:0 0 30px rgba(217,178,92,.5);transform:translateY(-3px)}
+.b2{background:none;color:var(--g);border:1px solid var(--g);margin-right:10px}.b2:hover{background:var(--g);color:#000}
+.hbtn{animation:up 1s .55s both}
+.dial{position:relative;width:min(80vw,440px);aspect-ratio:1;margin:auto;animation:up 1.4s both}
+.ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,var(--au),#fff6,var(--au),var(--g2),var(--au),#fff6,var(--au));animation:rot 14s linear infinite;-webkit-mask:radial-gradient(circle,transparent 62%,#000 63%);mask:radial-gradient(circle,transparent 62%,#000 63%)}
+.ring.r2{inset:9%;animation-direction:reverse;animation-duration:22s;opacity:.7;-webkit-mask:radial-gradient(circle,transparent 90%,#000 91%);mask:radial-gradient(circle,transparent 90%,#000 91%)}
+@keyframes rot{to{transform:rotate(360deg)}}
+.ticks{position:absolute;inset:0;border-radius:50%;overflow:hidden;animation:rot 90s linear infinite}
+.ticks i{position:absolute;inset:0;display:block}.ticks i:before{content:"";position:absolute;top:13%;left:50%;width:2px;height:3.5%;background:var(--au);opacity:.6;transform:translateX(-50%)}
+.ticks i:nth-child(5n+1):before{height:6%;background:var(--g);opacity:1;width:3px}
+.face{position:absolute;inset:22%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#16241d,#000 70%);border:1px solid var(--line);display:grid;place-items:center;text-align:center;box-shadow:0 0 80px rgba(18,183,106,.25),inset 0 0 40px #000}
+.face span{font-size:clamp(2.5rem,9vw,4rem);display:block;animation:fl 4s ease-in-out infinite}
+.face small{color:var(--au);font-weight:800;font-size:.8rem}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.stats div{background:var(--bg);padding:22px;text-align:center}.stats b{font-size:2rem;font-weight:900;color:var(--au);display:block}.stats small{color:var(--mut)}
+section{padding:70px 5vw}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;margin-bottom:6px}
+.sub{color:var(--mut);margin-bottom:26px}
+.tabs{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:60px;padding:5px;position:relative;margin-bottom:20px}
+.tabs button{position:relative;z-index:1;border:0;background:none;color:var(--ink);font:inherit;font-weight:800;padding:10px 34px;border-radius:50px;cursor:pointer;transition:color .3s}
+.tabs button.on{color:#000}
+.pill{position:absolute;top:5px;bottom:5px;width:calc(50% - 5px);right:5px;border-radius:50px;background:linear-gradient(135deg,var(--au),var(--g));transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.pill.car{transform:translateX(-100%)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:none;color:var(--ink);font:inherit;font-size:.88rem;padding:5px 16px;border-radius:30px;cursor:pointer;transition:.25s}
+.chip:hover{border-color:var(--g)}.chip.on{background:var(--g);color:#000;border-color:var(--g);font-weight:800}
+.bar{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:12px;background:var(--card);border:1px solid var(--line);padding:16px;border-radius:18px;margin-bottom:26px}
+.bar label{font-size:.78rem;color:var(--mut);display:block}
+.bar input,.bar select{width:100%;background:#000;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font:inherit}
+.bar input[type=range]{padding:0;accent-color:var(--g)}
+.grid{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:20px}
+.c{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .35s,border-color .35s,box-shadow .35s;animation:pop .5s both}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(18px)}}
+.c:hover{transform:translateY(-8px) rotate(-.4deg);border-color:var(--au);box-shadow:0 18px 40px -12px rgba(217,178,92,.35)}
+.th{height:150px;display:grid;place-items:center;font-size:3.6rem;position:relative;background:linear-gradient(135deg,var(--h1),var(--h2))}
+.th:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.18) 50%,transparent 60%);transform:translateX(120%);transition:.8s}
+.c:hover .th:after{transform:translateX(-120%)}
+.tag{position:absolute;top:10px;right:10px;font-size:.72rem;font-weight:800;background:#000a;color:var(--au);padding:2px 12px;border-radius:20px;border:1px solid var(--line)}
+.fav{position:absolute;top:8px;left:10px;background:none;border:0;font-size:1.4rem;cursor:pointer;color:#fff;z-index:2;transition:transform .3s}.fav.on{color:#ff4d6d;transform:scale(1.25)}
+.bd{padding:14px 16px 16px}.bd h3{font-size:1rem;font-weight:800}.bd .m{color:var(--mut);font-size:.8rem;margin:2px 0 8px}
+.sp{display:flex;gap:10px;flex-wrap:wrap;font-size:.78rem;color:var(--mut);margin-bottom:10px}
+.pr{color:var(--au);font-weight:900}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:50px}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.svc div{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,var(--bg2),#000);transition:.3s}
+.svc div:hover{border-color:var(--g);transform:translateY(-5px)}.svc span{font-size:2rem}.svc h3{margin:8px 0 4px;font-size:1.05rem}.svc p{color:var(--mut);font-size:.88rem}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:26px;padding:30px}
+.calc input{width:100%;accent-color:var(--au);margin:6px 0 14px}.res{font-size:2rem;font-weight:900}
+.cf{max-width:560px;display:grid;gap:12px}.cf input,.cf textarea,.cf select{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:12px;border-radius:12px;font:inherit}
+footer{padding:30px 5vw;border-top:1px solid var(--line);text-align:center;color:var(--mut);font-size:.85rem}
+.md{position:fixed;inset:0;background:#000d;z-index:50;display:none;place-items:center;padding:16px}.md.on{display:grid}
+.mb{background:var(--card);border:1px solid var(--au);border-radius:24px;max-width:480px;width:100%;overflow:hidden;animation:pop .4s both}
+.mb .th{height:180px}.mb .bd{padding:20px}.x{position:absolute;top:10px;left:14px;font-size:1.6rem;background:none;border:0;color:#fff;cursor:pointer;z-index:3}
+.dl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0;font-size:.88rem}.dl span{background:#000;border-radius:10px;padding:6px 12px;border:1px solid rgba(255,255,255,.07)}
+#top{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:18px;width:46px;height:46px;border-radius:50%;border:1px solid var(--au);background:#000c;color:var(--au);cursor:pointer;font-size:1.2rem;display:none;z-index:15}
+.rv{opacity:0;transform:translateY(30px);transition:1s}.rv.in{opacity:1;transform:none}
+@media(max-width:800px){.hero,.calc{grid-template-columns:1fr}.hero>*,.calc>*{min-width:0}.hero{min-height:auto;padding:30px 5vw}section{padding:50px 5vw}.bar{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}nav div a:nth-child(n+3){display:none}}
+@media(max-width:480px){.bar{grid-template-columns:1fr}.grid{gap:8px}.tabs button{padding:10px 22px}.calc{padding:20px}.stats b{font-size:1.5rem}nav{padding:10px 4vw}.b2{margin:10px 0 0}}
+@media(max-width:600px){.grid .th{height:78px;font-size:2rem}.grid .bd{padding:8px}.grid .bd h3{font-size:.74rem;line-height:1.5}.grid .bd .m{font-size:.62rem}.grid .sp{display:none}.grid .pr{font-size:.7rem}.grid .tag{font-size:.58rem;padding:0 6px;top:5px;right:5px}.grid .fav{font-size:1.05rem;top:3px;left:6px}}
+.mp iframe{display:block;width:100%;height:min(60vh,440px);border:0}.mc{display:flex;flex-wrap:wrap;gap:8px;padding:14px 18px;border-top:1px solid var(--line)}
+.mp{position:relative}.fb{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;color:var(--mut)}.fb span{font-size:2.4rem}.mp iframe{position:relative;z-index:1}
+.orb{position:relative;width:min(92vw,440px);aspect-ratio:1;margin:28px auto 0}.orb:before{content:"";position:absolute;inset:11%;border:1px dashed var(--line);border-radius:50%;animation:rot 60s linear infinite}
+.orb .mi{position:absolute;left:50%;top:50%;width:56%;aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid var(--au);border-radius:50%;padding:10px;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;background:radial-gradient(circle,#0c1b14,#000);font-size:.78rem}
+.orb .mi b{font-size:.82rem;line-height:1.4;color:var(--ink)}.orb .mi span{display:block;font-size:.68rem}.orb .mi .btn{padding:4px 12px;font-size:.68rem;margin:3px 2px 0}
+.oct{position:absolute;width:17%;aspect-ratio:1;margin:-8.5% 0 0 -8.5%;border:0;padding:0;cursor:pointer;background:linear-gradient(135deg,var(--au),var(--g));clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);transition:transform .3s;animation:pop .5s both}
+.oct i{position:absolute;inset:3px;display:grid;place-items:center;font-style:normal;font-size:clamp(1.1rem,5vw,1.7rem);background:var(--card);clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);transition:background .3s}
+.oct:hover{transform:scale(1.18)}.oct.on i{background:var(--g)}
+.gmw{position:relative}
+.sring{position:relative;width:min(94vw,500px);aspect-ratio:1;margin:10px auto 0}.sring:before{content:"";position:absolute;inset:4%;border:1px dashed var(--line);border-radius:50%;animation:rot 60s linear infinite}
+.so{position:absolute;left:calc(50% + var(--x)*1%);top:calc(50% + var(--y)*1%);width:44%;aspect-ratio:1;margin:-22% 0 0 -22%;border:0;padding:0;cursor:pointer;background:linear-gradient(135deg,var(--au),var(--g));clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);transition:transform .35s;color:var(--ink);font:inherit;animation:pop .6s both}
+.so i{position:absolute;inset:3px;clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);background:linear-gradient(160deg,#0c1511,#000);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:14%;text-align:center;font-style:normal;transition:background .3s}
+.so span{font-size:clamp(1.6rem,8vw,2.4rem);line-height:1.2}.so b{font-size:clamp(.7rem,3vw,.95rem);line-height:1.5}
+.so:hover{transform:scale(1.06)}.so.on i{background:linear-gradient(160deg,#0b7a47,#04140c)}
+.sc{position:absolute;left:50%;top:50%;width:12%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px solid var(--au);background:#000;display:grid;place-items:center;font-size:clamp(.9rem,4vw,1.4rem);z-index:2}
+.sdesc{text-align:center;max-width:30em;margin:18px auto 0;color:var(--mut);min-height:4em}.sdesc b{color:var(--au)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--au);outline-offset:2px}
+.cols{display:flex;gap:6px}.cols button{flex:1;background:#000;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:6px 0;cursor:pointer;font:inherit;transition:.25s}.cols button.on{background:var(--g);color:#000;font-weight:800;border-color:var(--g)}
+.pf{grid-column:1/-1}.pf .rg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mp{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:radial-gradient(ellipse at 50% 50%,#0c1b14,#000)}.mpw{overflow-x:auto}.mp svg{display:block;width:100%;height:auto}
+.ring2{fill:none;stroke:var(--g);stroke-width:.3;stroke-opacity:.5;stroke-dasharray:.8 .8}.pk{fill:var(--g);opacity:.12}
+.rd{fill:none;stroke:var(--au);stroke-width:.35;stroke-dasharray:1.2 1;opacity:.55;animation:dsh 6s linear infinite}@keyframes dsh{to{stroke-dashoffset:-20}}
+.lb{fill:var(--mut);font-size:2px;text-anchor:middle;font-family:Vazirmatn,Tahoma,sans-serif}
+.pt{cursor:pointer;outline:none}.dt{fill:var(--au);stroke:#000;stroke-width:.3;transition:r .2s}.pt:hover .dt,.pt:focus .dt{r:2.2;fill:var(--au2)}
+.pl{fill:none;stroke:var(--au);stroke-width:.25;transform-box:fill-box;transform-origin:center;animation:pls 2.4s ease-out infinite}@keyframes pls{from{transform:scale(.6);opacity:1}to{transform:scale(2.6);opacity:0}}
+.mi{padding:14px 18px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem;min-height:3.4em}
+</style>
+</head>
+<body>
+<nav><b class="gold">املاک رولکس</b><div><a href="#list">آگهی‌ها</a><a href="#svc">خدمات</a><a href="#calc">محاسبه رهن</a><a href="#map">نقشه</a><a href="#contact">تماس</a></div></nav>
+
+<header class="hero">
+<div>
+<h1><span class="gold">شرکت املاک رولکس</span><br>ملایر</h1>
+<p>خرید، فروش، رهن و اجاره ملک و خودرو؛ با دقتی که از یک ساعت سوئیسی انتظار دارید. فایل‌های دست‌چین، قیمت شفاف و مشاوره‌ی صادقانه.</p>
+<div class="hbtn"><a class="btn b1" href="#list">مشاهده فایل‌ها</a><a class="btn b2" href="#contact">مشاوره رایگان</a></div>
+</div>
+<div class="dial"><div class="ring"></div><div class="ring r2"></div><div class="ticks" id="ticks"></div>
+<div class="face"><div><span>🏛️</span><small>ملایر · از ۱۳۹۰</small></div></div></div>
+</header>
+
+<div class="stats"><div><b data-n="850">0</b><small>فایل فعال</small></div><div><b data-n="1200">0</b><small>معامله موفق</small></div><div><b data-n="120">0</b><small>خودروی آماده</small></div><div><b data-n="15">0</b><small>سال تجربه</small></div></div>
+
+<section id="list">
+<h2 class="gold">فایل‌های ملک و خودرو</h2><p class="sub">دسته را انتخاب کنید، فیلتر بزنید و روی هر فایل بزنید تا جزئیات را ببینید.</p>
+<div class="tabs" id="tabs"><span class="pill" id="pill"></span><button class="on" data-t="h">🏠 املاک</button><button data-t="c">🚗 خودرو</button></div>
+<div class="chips" id="chips"></div>
+<div class="bar">
+<div><label>جستجو</label><input id="q" placeholder="محله، مدل، ویژگی…"></div>
+<div><label>نوع معامله</label><select id="deal"></select></div>
+<div><label>مرتب‌سازی</label><select id="sort"><option value="n">جدیدترین</option><option value="a">ارزان‌ترین</option><option value="d">گران‌ترین</option><option value="f">علاقه‌مندی‌ها</option></select></div>
+<div><label>نمایش در هر ردیف</label><div class="cols" id="cols"><button data-c="1">۱</button><button data-c="2">۲</button><button data-c="3">۳</button><button data-c="4">۴</button></div></div>
+<div class="pf"><label>بازه قیمت: <b id="pv"></b></label><div class="rg"><input type="range" id="pmin" min="0" max="100" value="0" aria-label="حداقل قیمت"><input type="range" id="pr" min="0" max="100" value="100" aria-label="حداکثر قیمت"></div></div>
+</div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="svc"><h2 class="gold">خدمات ما</h2><p class="sub">از اولین بازدید تا تحویل کلید.</p>
+<div class="sring" id="sring"><button class="so" data-t="تنظیم قولنامه و سند" data-d="قرارداد رسمی با بررسی کامل مدارک و وضعیت ثبتی." style="--x:23;--y:-23;animation-delay:0ms"><i><span>📑</span><b>تنظیم قولنامه و سند</b></i></button><button class="so" data-t="ارزیابی رایگان قیمت" data-d="قیمت روز ملک یا خودروی شما بر پایه بازار ملایر." style="--x:-23;--y:-23;animation-delay:120ms"><i><span>💰</span><b>ارزیابی رایگان قیمت</b></i></button><button class="so" data-t="رهن و اجاره" data-d="مستأجر و موجر معتبر، قرارداد بدون دردسر." style="--x:23;--y:23;animation-delay:240ms"><i><span>🔑</span><b>رهن و اجاره</b></i></button><button class="so" data-t="معاوضه" data-d="ملک با ملک، خودرو با ملک یا خودرو با خودرو." style="--x:-23;--y:23;animation-delay:360ms"><i><span>🔁</span><b>معاوضه</b></i></button><div class="sc">🏛️</div></div>
+<p class="sdesc" id="sdesc"></p></section>
+
+<section id="calc"><div class="calc rv"><div><h2 class="gold">تبدیل رهن و اجاره</h2><p class="sub">با نرخ تبدیل ۳٪ ماهانه تقریبی.</p>
+<label>رهن کامل: <b id="cv1"></b> میلیون تومان</label><input type="range" id="c1" min="100" max="5000" step="50" value="1000">
+<label>ودیعه نقدی: <b id="cv2"></b> میلیون تومان</label><input type="range" id="c2" min="0" max="2000" step="50" value="300"></div>
+<div><small style="color:var(--mut)">اجاره ماهانه تقریبی</small><div class="res gold" id="rent"></div></div></div></section>
+
+<section id="contact"><h2 class="gold">ثبت درخواست</h2><p class="sub">درخواستتان از طریق واتساپ برای ما ارسال می‌شود.</p>
+<form class="cf" id="cf" onsubmit="return false"><input id="nm" placeholder="نام شما"><select id="sv"><option>می‌خواهم ملک بخرم</option><option>می‌خواهم ملک بفروشم</option><option>رهن و اجاره</option><option>خرید یا فروش خودرو</option></select><textarea id="ms" rows="3" placeholder="توضیحات (بودجه، محله، مدل…)"></textarea><button class="btn b1" id="send" type="button">ارسال درخواست</button></form></section>
+
+<section id="map"><h2 class="gold">نقشه ملایر</h2><p class="sub">ملایر و محدوده فعالیت ما روی نقشه گوگل.</p>
+<div class="mp rv"><div class="gmw"><div class="fb"><span>🗺️</span><p>نقشه ملایر</p><a class="btn b1" id="fbl" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D9%85%D9%84%D8%A7%DB%8C%D8%B1">باز کردن در گوگل‌مپ</a></div><iframe id="gm" title="نقشه ملایر" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D9%85%D9%84%D8%A7%DB%8C%D8%B1&hl=fa&z=13&output=embed"></iframe></div></div>
+</section>
+<footer>© شرکت املاک رولکس ملایر · تلفن: ۰۹۱۸۰۰۰۰۰۰۰ · ملایر، خیابان اصلی</footer>
+<button id="top" aria-label="بالا">↑</button>
+<div class="md" id="md"><div class="mb" id="mb" style="position:relative"></div></div>
+
+<script>
+const F=n=>Number(n).toLocaleString('fa-IR');
+const price=p=>p>=1000?F(+(p/1000).toFixed(1))+' میلیارد':F(p)+' میلیون';
+const col=[['#0b7a47','#04140c'],['#8a6a1c','#150f02'],['#0f3d2b','#000'],['#5b4a16','#0a1a10']];
+let id=0;const mk=(t,c,i,ti,loc,pr,d,sp,ex)=>({id:id++,t,c,i,ti,loc,pr,d,sp,ex});
+const D=[
+mk('h','آپارتمان','🏢','آپارتمان ۱۲۰ متری نوساز','بلوار امام',4200,'فروش',['۳ خواب','۱۲۰ متر','طبقه ۳'],'پارکینگ، انباری، آسانسور'),
+mk('h','آپارتمان','🏙️','آپارتمان ۸۵ متری','خیابان مدرس',1500,'رهن و اجاره',['۲ خواب','۸۵ متر','طبقه ۱'],'رهن کامل، تخلیه فوری'),
+mk('h','ویلا','🏡','ویلای دوبلکس با باغچه','شهرک گلستان',9800,'فروش',['۴ خواب','۳۰۰ متر','حیاط ۲۰۰ متر'],'استخر، نورگیر، سند تک‌برگ'),
+mk('h','ویلا','🏰','ویلای لوکس نمای رومی','شهرک مهدیه',14500,'فروش',['۵ خواب','۴۵۰ متر','سه‌طبقه'],'سینما، روف‌گاردن، هوشمند'),
+mk('h','زمین','🌿','زمین مسکونی ۳۰۰ متری','شهرک مهدیه',3600,'فروش',['۳۰۰ متر','دو بر','۱۲ متری'],'پروانه ساخت موجود'),
+mk('h','زمین','🌄','زمین باغی ۱۵۰۰ متری','جاده ملایر',5200,'فروش',['۱۵۰۰ متر','آب و برق','محصور'],'مناسب ویلاسازی'),
+mk('h','مغازه','🏪','مغازه تجاری ۴۰ متری','میدان قدس',6800,'فروش',['۴۰ متر','بر اصلی','دو دهنه'],'موقعیت عالی تجاری'),
+mk('h','مغازه','🏬','مغازه برای اجاره','خیابان انقلاب',900,'رهن و اجاره',['۳۰ متر','همکف','سرقفلی دارد'],'مناسب پوشاک و موبایل'),
+mk('h','باغ','🍇','باغ انگور و ویلا','روستای اطراف ملایر',7400,'پیش‌فروش',['۵۰۰۰ متر','چاه آب','ویلای ۸۰ متری'],'مشاعات دارد'),
+mk('h','آپارتمان','🌆','پنت‌هاوس ۲۲۰ متری','بلوار امام',11800,'پیش‌فروش',['۴ خواب','۲۲۰ متر','طبقه آخر'],'تراس ۵۰ متری، ۲ پارکینگ'),
+mk('c','سواری','🚗','پژو ۲۰۶ تیپ ۵ - ۱۴۰۱','سفید · ۳۰ هزار کیلومتر',1250,'فروش',['۱۴۰۱','۳۰ هزار km','بیمه ۶ ماه'],'بدون رنگ'),
+mk('c','سواری','🚙','دنا پلاس اتوماتیک ۱۴۰۲','نقره‌ای · ۱۵ هزار',1480,'فروش',['۱۴۰۲','۱۵ هزار km','اتوماتیک'],'سانروف'),
+mk('c','سواری','🚘','هیوندای النترا ۲۰۱۸','مشکی · ۶۰ هزار',2900,'معاوضه',['۲۰۱۸','۶۰ هزار km','فول'],'معاوضه با ملک'),
+mk('c','شاسی‌بلند','🚐','کیا اسپورتیج ۲۰۱۹','سفید · ۴۵ هزار',4100,'فروش',['۲۰۱۹','۴۵ هزار km','فول‌آپشن'],'دوربین ۳۶۰'),
+mk('c','شاسی‌بلند','🏎️','هایما S7 - ۱۴۰۳','مشکی · صفرکیلومتر',3600,'پیش‌فروش',['۱۴۰۳','صفر','توربو'],'تحویل ۴۵ روزه'),
+mk('c','وانت','🛻','نیسان زامیاد ۱۴۰۰','سفید · ۸۰ هزار',1050,'فروش',['۱۴۰۰','۸۰ هزار km','دوگانه‌سوز'],'سالم و کم‌مصرف'),
+mk('c','کلاسیک','🚕','پیکان وانت کلاسیک','قرمز · مجموعه‌ای',380,'فروش',['۱۳۶۵','کلکسیونی','اورجینال'],'سند منگوله‌دار'),
+mk('c','موتور','🏍️','موتور ۲۰۰ سی‌سی ۱۴۰۲','مشکی · ۵ هزار',210,'معاوضه',['۱۴۰۲','۵ هزار km','پلاک ملی'],'شخصی')
+];
+const cats={h:['همه','آپارتمان','ویلا','زمین','مغازه','باغ'],c:['همه','سواری','شاسی‌بلند','وانت','کلاسیک','موتور']};
+const deals={h:['همه معاملات','فروش','رهن و اجاره','پیش‌فروش'],c:['همه معاملات','فروش','معاوضه','پیش‌فروش']};
+let S={t:'h',c:'همه'},fav=new Set();
+try{fav=new Set(JSON.parse(localStorage.getItem('rf')||'[]'))}catch(e){}
+const $=s=>document.getElementById(s);
+// ticks
+$('ticks').innerHTML=Array.from({length:60},(_,i)=>`<i style="transform:rotate(${i*6}deg)"></i>`).join('');
+function setT(t){S.t=t;S.c='همه';$('pill').classList.toggle('car',t=='c');
+document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t==t));
+$('deal').innerHTML=deals[t].map(x=>`<option>${x}</option>`).join('');
+const M=t=='h'?15000:5000;[$('pr'),$('pmin')].forEach(r=>{r.max=M;r.step=50});$('pr').value=M;$('pmin').value=0;chips();render()}
+function chips(){$('chips').innerHTML=cats[S.t].map(x=>`<button class="chip ${x==S.c?'on':''}">${x}</button>`).join('')}
+$('chips').onclick=e=>{if(e.target.classList.contains('chip')){S.c=e.target.textContent;chips();render()}};
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>setT(b.dataset.t));
+['q','deal','sort'].forEach(k=>$(k).oninput=render);
+$('pmin').oninput=()=>{if(+$('pmin').value>+$('pr').value)$('pr').value=$('pmin').value;render()};
+$('pr').oninput=()=>{if(+$('pr').value<+$('pmin').value)$('pmin').value=$('pr').value;render()};
+function render(){
+const q=$('q').value.trim(),dl=$('deal').value,mx=+$('pr').value,mn=+$('pmin').value,so=$('sort').value;
+$('pv').textContent='از '+price(mn)+' تا '+price(mx)+' تومان';
+let L=D.filter(x=>x.t==S.t&&(S.c=='همه'||x.c==S.c)&&(dl.startsWith('همه')||x.d==dl)&&x.pr<=mx&&x.pr>=mn&&(!q||(x.ti+x.loc+x.c+x.ex).includes(q)));
+if(so=='a')L.sort((a,b)=>a.pr-b.pr);if(so=='d')L.sort((a,b)=>b.pr-a.pr);if(so=='f')L.sort((a,b)=>fav.has(b.id)-fav.has(a.id));
+$('grid').innerHTML=L.length?L.map((x,i)=>`<div class="c" data-id="${x.id}" style="animation-delay:${i*60}ms"><div class="th" style="--h1:${col[x.id%4][0]};--h2:${col[x.id%4][1]}">${x.i}<span class="tag">${x.d}</span><button class="fav ${fav.has(x.id)?'on':''}" data-f="${x.id}" aria-label="علاقه‌مندی">♥</button></div><div class="bd"><h3>${x.ti}</h3><div class="m">📍 ${x.loc}</div><div class="sp">${x.sp.map(s=>`<span>${s}</span>`).join('')}</div><div class="pr">${price(x.pr)} تومان</div></div></div>`).join(''):'<div class="empty">فایلی با این فیلتر پیدا نشد. فیلترها را تغییر دهید یا برای فایل اختصاصی تماس بگیرید.</div>'}
+$('grid').onclick=e=>{const f=e.target.closest('.fav');
+if(f){e.stopPropagation();const n=+f.dataset.f;fav.has(n)?fav.delete(n):fav.add(n);try{localStorage.setItem('rf',JSON.stringify([...fav]))}catch(_){}f.classList.toggle('on');return}
+const c=e.target.closest('.c');if(c)open_(D[+c.dataset.id])};
+function open_(x){$('mb').innerHTML=`<button class="x" onclick="cl()">×</button><div class="th" style="--h1:${col[x.id%4][0]};--h2:${col[x.id%4][1]}">${x.i}<span class="tag">${x.d}</span></div><div class="bd"><h3>${x.ti}</h3><div class="m">📍 ${x.loc} · ${x.c}</div><div class="dl">${x.sp.map(s=>`<span>${s}</span>`).join('')}</div><p style="color:var(--mut);font-size:.9rem">${x.ex}</p><p class="pr" style="font-size:1.4rem;margin:10px 0">${price(x.pr)} تومان</p><a class="btn b1" href="tel:09180000000">تماس با مشاور</a> <a class="btn b2" target="_blank" href="https://wa.me/989180000000?text=${encodeURIComponent('سلام، درباره «'+x.ti+'» اطلاعات می‌خواستم')}">واتساپ</a></div>`;$('md').classList.add('on')}
+function cl(){$('md').classList.remove('on')}
+$('md').onclick=e=>{if(e.target.id=='md')cl()};document.onkeydown=e=>{if(e.key=='Escape')cl()};
+// calc
+function calc(){const a=+$('c1').value,b=+$('c2').value;$('cv1').textContent=F(a);$('cv2').textContent=F(b);$('rent').textContent=F(Math.max(0,Math.round((a-b)*0.03*10)/10))+' میلیون تومان'}
+$('c1').oninput=$('c2').oninput=calc;calc();
+$('send').onclick=()=>{const t=`سلام، من ${$('nm').value||'—'} هستم. ${$('sv').value}. ${$('ms').value}`;window.open('https://wa.me/989180000000?text='+encodeURIComponent(t),'_blank')};
+// counters + reveal + top
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);e.target.classList.add('in');
+const n=e.target.dataset.n;if(n){const T=+n,s=performance.now();(function f(t){const p=Math.min(1,(t-s)/1600);e.target.textContent=F(Math.round(T*(1-Math.pow(1-p,3))))+(p==1?'+':'');if(p<1)requestAnimationFrame(f)})(s)}}),{threshold:.3});
+document.querySelectorAll('[data-n],.rv').forEach(x=>io.observe(x));
+onscroll=()=>{$('top').style.display=scrollY>600?'block':'none'};$('top').onclick=()=>scrollTo({top:0});
+function setCols(n){$('grid').style.setProperty('--cols',n);document.querySelectorAll('#cols button').forEach(b=>b.classList.toggle('on',+b.dataset.c==n))}
+$('cols').onclick=e=>{const b=e.target.closest('button');if(b)setCols(+b.dataset.c)};
+const GM=(q,z)=>'https://www.google.com/maps?q='+encodeURIComponent(q)+'&hl=fa&z='+z+'&output=embed';
+function svcInit(){const bs=[...document.querySelectorAll('.so')],d=$('sdesc');
+const show=b=>{bs.forEach(x=>x.classList.toggle('on',x==b));d.innerHTML=`<b>${b.dataset.t}</b><br>${b.dataset.d}`};
+bs.forEach(b=>{b.onclick=b.onmouseenter=()=>show(b)});show(bs[0])}
+setCols(3);svcInit();setT('h');
+</script>
+</body>
+</html>
